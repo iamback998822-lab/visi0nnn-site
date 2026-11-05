@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VISI0N ZX (Veer) — Student, Builder, 16</title>
+  <meta name="description" content="VISI0N ZX (Veer) — 16-year-old student and self-taught builder. The things I make, what I'm learning, and how to reach me." />
+  <meta name="theme-color" content="#04040a" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='88'>⚡</text></svg>" />
+
+  <!-- Social preview (shows when someone shares your link) -->
+  <meta property="og:title" content="VISI0N ZX (Veer) — Student, Builder, 16" />
+  <meta property="og:description" content="The things I make, what I'm learning, and how to reach me." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span class="progress__bar" id="progressBar"></span></div>
+
+  <div class="bg-photo" aria-hidden="true"></div>
+  <div class="bg-scrim" aria-hidden="true"></div>
+
+  <div class="glow glow--one" aria-hidden="true"></div>
+  <div class="glow glow--two" aria-hidden="true"></div>
+  <div class="grid-fx" aria-hidden="true"></div>
+
+  <header class="nav" id="top">
+    <a class="nav__logo" href="#top">
+      <span class="nav__logo-mark">&lt;/&gt;</span>
+      <span>vision</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#offscreen">Off screen</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#vault">Vault</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <p class="diwali">
+        <span class="diwali__lamp" aria-hidden="true">🪔</span>
+        <span>Happy Diwali</span>
+        <span class="diwali__from">from Veer</span>
+      </p>
+
+      <p class="hero__eyebrow"><span class="dot"></span> student · gamer · anime watcher · builder</p>
+      <h1 class="hero__title">
+        Hey, I'm <span class="grad glitch" data-text="VISI0N ZX">VISI0N ZX</span>
+        <span class="hero__alias">(Veer)</span>.
+      </h1>
+      <p class="hero__text">
+        I'm 16, in 10th grade, and I like making things — mostly on a screen.
+        This is my corner of the internet: what I've built, what I'm learning,
+        and what I'm figuring out next.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#work">See my work</a>
+        <a class="btn btn--ghost" href="#about">More about me</a>
+      </div>
+
+      <ul class="hero__stats">
+        <li><strong>16</strong><span>years old</span></li>
+        <li><strong>10th</strong><span>grade</span></li>
+      </ul>
+
+      <div class="now reveal">
+        <span class="now__dot" aria-hidden="true"></span>
+        <span class="now__label">Right now</span>
+        <span class="now__text" id="nowText"></span>
+        <span class="now__updated" id="nowUpdated"></span>
+      </div>
+    </section>
+
+    <!-- scroll-linked marquee -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track" id="tickerTrack">
+        <span>VISI0N ZX — BUILDER — 16 — STUDENT — GAMER — ANIME —</span>
+        <span>VISI0N ZX — BUILDER — 16 — STUDENT — GAMER — ANIME —</span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section reveal" id="about">
+      <div class="section__head">
+        <span class="section__index">01</span>
+        <h2>About me</h2>
+      </div>
+
+      <div class="about">
+        <div class="about__photo">
+          <img class="about__avatar" src="me.jpg" alt="Portrait of Veer Pratap" width="190" height="190" />
+        </div>
+
+        <div class="about__body">
+          <p>
+            I'm <strong>Veer Pratap</strong>, a 16-year-old student in the 10th
+            grade at <strong>Ocean Pearl International School</strong>. I like
+            figuring things out — taking something apart, seeing how it works,
+            then trying to build my own version of it.
+          </p>
+          <p>
+            Right now that mostly means the web. This site is one of those
+            projects, and it's an honest picture of where I am: learning by
+            doing, one thing at a time. I'm not an expert yet and I don't
+            pretend to be. I'm just early — and I'm enjoying it.
+          </p>
+          <p>
+            I'll be straight with you: I'm not the strongest student in class.
+            I learn by making things and breaking them, not by memorising —
+            which is great for projects and less great for exams. I'm working
+            on both.
+          </p>
+          <p>
+            When I'm not studying I'm usually in Minecraft or Free Fire, or
+            watching anime — Naruto is the favourite. Building something inside
+            a game and then wanting to build the real thing is honestly why
+            this site exists in the first place.
+          </p>
+          <p>
+            One more thing, since it explains a lot: I'm an introvert. Big
+            groups drain me, and I'll say more in one message than I would out
+            loud all week. Hand me something to build on my own and I'm
+            completely happy.
+          </p>
+
+          <aside class="heritage">
+            <span class="heritage__label">Rajput</span>
+            <p>
+              I'm Rajput — <em>raja-putra</em>, "son of a king." The history is
+              full of forts, impossible defences, and people who chose to stand
+              when surrender would have been easier. What I take from it isn't
+              the battles; it's the code: keep your word, don't back down from
+              what you believe in, and look after the people standing next to
+              you. I'm not a warrior — I'm a 16-year-old with a desktop — but I'd
+              like to think some of that stubbornness made it down to me.
+            </p>
+          </aside>
+
+          <ul class="chips" aria-label="Things I like">
+            <li>Minecraft</li>
+            <li>Free Fire</li>
+            <li>Naruto</li>
+            <li>Web dev</li>
+            <li>Building things</li>
+            <li>Introvert</li>
+            <li>Hacker</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFF SCREEN -->
+    <section class="section reveal" id="offscreen">
+      <div class="section__head">
+        <span class="section__index">02</span>
+        <h2>When I'm off screen</h2>
+        <p class="section__sub">Not projects — just the stuff I actually spend my time on.</p>
+        <p class="gamertag">
+          In game <strong>VISI0N ZX</strong>
+          <span class="gamertag__hack">&gt;_ hacker</span>
+        </p>
+      </div>
+
+      <div class="faves">
+        <article class="fave">
+          <div class="fave__icon" aria-hidden="true">⛏️</div>
+          <div>
+            <h3 class="fave__title">Minecraft</h3>
+            <p class="fave__text">
+              Survival, creative, and a lot of redstone I don't fully
+              understand. Same itch as building a website, different blocks.
+              Fair warning: I'm dangerous in PvP — don't test it.
+            </p>
+            <p class="fave__id" title="Click to select"><span>IGN</span> Visi0n_Zx</p>
+            <span class="fave__tag">Sandbox</span>
+            <span class="fave__tag fave__tag--pvp">PvP</span>
+          </div>
+        </article>
+
+        <article class="fave">
+          <div class="fave__icon" aria-hidden="true">🔥</div>
+          <div>
+            <h3 class="fave__title">Free Fire</h3>
+            <p class="fave__text">
+              Fast matches with a squad. Best when it's loud and everyone is
+              arguing about who rushed first.
+            </p>
+            <p class="fave__id" title="Click to select"><span>UID</span> 4863499804</p>
+            <span class="fave__tag">Battle royale</span>
+          </div>
+        </article>
+
+        <article class="fave">
+          <div class="fave__icon" aria-hidden="true">🍥</div>
+          <div>
+            <h3 class="fave__title">Anime</h3>
+            <p class="fave__text">
+              If I'm not in a game, I'm watching anime. My favourite is
+              Naruto — ninjas, hand signs, and an opening I have never once
+              skipped. Say you haven't watched it and I will explain the whole
+              plot whether you asked or not.
+            </p>
+            <span class="fave__tag">Favourite: Naruto</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section reveal" id="skills">
+      <div class="section__head">
+        <span class="section__index">03</span>
+        <h2>What I'm good at</h2>
+        <p class="section__sub">Some of it is talent. Most of it is showing up.</p>
+      </div>
+
+      <div class="skills">
+        <article class="skill">
+          <div class="skill__icon" aria-hidden="true">💻</div>
+          <h3 class="skill__title">Building for the web</h3>
+          <p class="skill__text">
+            HTML, CSS and JavaScript, written by hand. This site is my proof —
+            the layout, colours and animations are mine.
+          </p>
+        </article>
+
+        <article class="skill">
+          <div class="skill__icon" aria-hidden="true">🧠</div>
+          <h3 class="skill__title">Learning fast</h3>
+          <p class="skill__text">
+            Show me something new and I'll keep at it until it clicks. 10th
+            grade is already a full-time job in that.
+          </p>
+        </article>
+
+        <article class="skill">
+          <div class="skill__icon" aria-hidden="true">🧩</div>
+          <h3 class="skill__title">Problem solving</h3>
+          <p class="skill__text">
+            My favourite part is the bit where something breaks and nobody
+            knows why yet. That's the interesting part.
+          </p>
+        </article>
+
+        <article class="skill">
+          <div class="skill__icon" aria-hidden="true">✍️</div>
+          <h3 class="skill__title">Ideas &amp; design</h3>
+          <p class="skill__text">
+            I care how a thing looks, not just whether it works. Clean beats
+            complicated almost every time.
+          </p>
+        </article>
+
+        <article class="skill">
+          <div class="skill__icon" aria-hidden="true">🗣️</div>
+          <h3 class="skill__title">Explaining things</h3>
+          <p class="skill__text">
+            If you can't explain it simply, you don't know it yet. I'm
+            practising both halves.
+          </p>
+        </article>
+
+        <article class="skill">
+          <div class="skill__icon" aria-hidden="true">⏳</div>
+          <h3 class="skill__title">Sticking with it</h3>
+          <p class="skill__text">
+            Finishing the boring 80% is the whole trick. I'm better at it than
+            I was last year.
+          </p>
+        </article>
+      </div>
+
+      <p class="nextup">
+        <span class="nextup__label">Next up</span>
+        Cybersecurity and ethical hacking — how systems actually break, and how
+        people defend them. Starting with free legal practice sites like
+        TryHackMe and picoCTF.
+      </p>
+    </section>
+
+    <!-- WORK -->
+    <section class="section reveal" id="work">
+      <div class="section__head">
+        <span class="section__index">04</span>
+        <h2>My work</h2>
+        <p class="section__sub">Small list for now. It grows every few months.</p>
+      </div>
+
+      <div class="works" id="workGrid">
+        <!-- Cards are generated from the WORK list in script.js -->
+      </div>
+
+      <p class="works__note">
+        Everything here is made by me. If you want to know how any of it works,
+        <a href="#contact">just ask</a>.
+      </p>
+    </section>
+
+    <!-- VAULT -->
+    <section class="section reveal" id="vault">
+      <div class="section__head">
+        <span class="section__index">05</span>
+        <h2>The Vault</h2>
+        <p class="section__sub">Wallpapers, live wallpapers, PFPs and mods — plus a private, password-locked vault.</p>
+      </div>
+
+      <div class="vault">
+        <div class="vault__bar">
+          <div class="vault__tabs" role="group" aria-label="Choose a vault category">
+            <button class="vault__tab" type="button" data-filter="wallpaper" aria-pressed="false">
+              <span class="vault__tab-icon" aria-hidden="true">🖼️</span>
+              <span class="vault__tab-text">
+                <span class="vault__tab-label">Wallpapers</span>
+                <span class="vault__tab-meta">Desktop &amp; phone backgrounds</span>
+              </span>
+              <span class="vault__tab-count" data-count-for="wallpaper"></span>
+            </button>
+            <button class="vault__tab" type="button" data-filter="live" aria-pressed="false">
+              <span class="vault__tab-icon" aria-hidden="true">🎞️</span>
+              <span class="vault__tab-text">
+                <span class="vault__tab-label">Live wallpapers</span>
+                <span class="vault__tab-meta">Animated &amp; video backgrounds</span>
+              </span>
+              <span class="vault__tab-count" data-count-for="live"></span>
+            </button>
+            <button class="vault__tab" type="button" data-filter="pfp" aria-pressed="false">
+              <span class="vault__tab-icon" aria-hidden="true">🙂</span>
+              <span class="vault__tab-text">
+                <span class="vault__tab-label">PFPs</span>
+                <span class="vault__tab-meta">Profile pictures</span>
+              </span>
+              <span class="vault__tab-count" data-count-for="pfp"></span>
+            </button>
+            <button class="vault__tab" type="button" data-filter="mod" aria-pressed="false">
+              <span class="vault__tab-icon" aria-hidden="true">⛏️</span>
+              <span class="vault__tab-text">
+                <span class="vault__tab-label">Minecraft mods</span>
+                <span class="vault__tab-meta">Mods &amp; add-ons</span>
+              </span>
+              <span class="vault__tab-count" data-count-for="mod"></span>
+            </button>
+            <button class="vault__tab vault__tab--private" type="button" data-filter="private" aria-pressed="false">
+              <span class="vault__tab-icon" aria-hidden="true">🔒</span>
+              <span class="vault__tab-text">
+                <span class="vault__tab-label">Private</span>
+                <span class="vault__tab-meta">Password locked</span>
+              </span>
+              <span class="vault__tab-count" data-count-for="private"></span>
+            </button>
+          </div>
+          <span class="vault__count" id="vaultCount"></span>
+          <button class="vault__hide" type="button" id="vaultHide" hidden>Hide files ✕</button>
+        </div>
+        <div class="vault__lock" id="vaultLock" hidden></div>
+        <div class="vault__grid" id="vaultGrid" hidden></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section reveal" id="contact">
+      <div class="section__head">
+        <span class="section__index">06</span>
+        <h2>Say hi</h2>
+      </div>
+
+      <div class="contact">
+        <p>
+          Want to ask me something, talk about a project, or tell me what to
+          build next? DM me on Instagram — I'm better in text than in person,
+          and I actually reply.
+        </p>
+
+        <div class="contact__links">
+          <a class="pill pill--accent" href="https://www.instagram.com/veer_bxnnx/" target="_blank" rel="noopener">
+            Instagram · @veer_bxnnx
+          </a>
+          <a class="pill pill--discord" href="https://discord.com/users/1293417323029336118" target="_blank" rel="noopener">
+            Discord
+          </a>
+          <a class="pill" href="mailto:visi0nzx44@gmail.com">Email · visi0nzx44@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year">2026</span> VISI0N ZX (Veer). Built by hand, one line at a time.</p>
+    <a href="https://www.instagram.com/veer_bxnnx/" target="_blank" rel="noopener">Instagram</a>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
